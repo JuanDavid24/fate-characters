@@ -1,0 +1,65 @@
+[33mcommit 1496ce19e6d5afe4d8006d621118b87471702bf3[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Thu Nov 12 21:53:25 2020 -0300
+
+    +contact.html +formulario de contacto
+
+[33mcommit 2d27fdf17567502c347f0a0e7fc506d171156edf[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Thu Nov 12 13:31:51 2020 -0300
+
+    +open_iconic +iconos en footer y boton reserva
+
+[33mcommit 5c7ba20df752fcfaa0f02110460d6564a5eae448[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Thu Nov 12 01:41:45 2020 -0300
+
+    +about.html +navbar +breadcrumb
+
+[33mcommit b25c471de41c4333f94f1e5cc3f8334434e1e2ee[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Sat Nov 7 21:15:34 2020 -0300
+
+    corregido footer
+
+[33mcommit 652a18d2da6301c74799cd1e385f59333ac1033a[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Sat Nov 7 20:57:07 2020 -0300
+
+    estilos de index con flex
+
+[33mcommit 1b62860b4f6c8f41967008c446a7d08fbccf41bd[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Sat Nov 7 01:30:13 2020 -0300
+
+    index 1ra version grillas
+
+[33mcommit c3520d3773168740f596d9300d3272c017764643[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Tue Nov 3 23:39:20 2020 -0300
+
+    bootstrap included in index
+
+[33mcommit e8d351ba1666ce6efc3ad4795c64f980c105c233[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Tue Nov 3 23:11:59 2020 -0300
+
+    index.html added
+
+[33mcommit 07b9b27f52006ed785515e93c87b3f7f9f1d83b8[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Tue Nov 3 23:00:34 2020 -0300
+
+    lite-server added
+
+[33mcommit e71dd89159aa92c5be10c85c4fa69e69c1a482b9[m
+Author: JuanDavid24 <david.juan90.jd@gmail.com>
+Date:   Tue Nov 3 22:38:57 2020 -0300
+
+    package.json added
+
+[33mcommit f3296ccdade200032fb574bbaf9fe5840a5dbb0a[m
+Author: Juan David <david.juan90.jd@gmail.com>
+Date:   Mon Nov 2 16:08:36 2020 +0000
+
+    Initial commit

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+
+    <title>Guía hoteles</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+      <a class="navbar-brand" href="#">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="./index.html">Home</a> </li>
+          <li class="nav-item active"> <a class="nav-link" href="#">Contacto</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="./prices.html">Precios</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#">Términos y condiciones</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+      <h1>Hoteles</h1>
+    </div>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb badge-pill pl-4">
+          <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+        </ol>
+      </nav>
+
+      <form>
+        <div class="form-row">
+          <div class="form-group col-sm-6">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su dirección de correo electrónico">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-sm-9">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+          </div>
+          <div class="form-group col-sm-3">
+            <label for="provincia">Provincia</label>
+            <select class="form-control" id="provincia">
+              <option selected>CABA</option>
+              <option>GBA</option>
+              <option>Santa Fe</option>
+              <option>Córdoba</option>
+              <option>Entre Ríos</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="comentario">Comentario</label>
+          <textarea type="text" class="form-control" id="comentario" placeholder="Ingrese su comentario..." rows="10"></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="contactame">
+            <label for="contactame">Quiero que me contacten</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+    
+    <footer>
+      <div class="row">
+        <div class= "col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">Facebook</a>
+          <a href="http://www.twitter.com">Twitter</a>
+          <a href="http://www.instagram.com">Instagram</a>
+        </div>
+        <div class= "col-sm-4">
+          <address>
+            <h4>Oficina central</h4>
+            <p><span class="oi oi-home footer-icon"></span>Av. Mitre 2900, Sarandí, Argentina</p>
+            <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
+            <p><span class="oi oi-envelope-closed"></span></span>contact@guiahoteles.com</p>
+          </address>
+        </div>
+        <div class= "col-sm-4 d-flex flex-column align-items-end">
+          <a href="http://www.facebook.com">Contacto</a>
+          <a href="http://www.twitter.com">Nosotros</a>
+          <a href="http://www.twitter.com">Precios</a>
+          <a href="http://www.instagram.com">Términos y condiciones</a>
+        </div>
+      </div>
+      
+    </footer>
+    <!-- Optional Javascript -->
+    <!-- Javascript first, then pooper, then bootstrap -->
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
