@@ -10,25 +10,25 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
-    <title>Guía hoteles</title>
+    <title>Fate/Stay Night characters</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
-      <a class="navbar-brand" href="#">Hoteles</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
+      <a class="navbar-brand" href="#">Fate/Stay Night</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="./params.html">Parámetros</a> </li>
           <li class="nav-item"> <a class="nav-link" href="./contact.html">Contacto</a> </li>
           <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="./prices.html">Precios</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#">Términos y condiciones</a> </li>
         </ul>
       </nav>
     <div class="jumbotron">
-      <h1>Hoteles</h1>
+      <h1>Fate/Stay Night characters</h1>
     </div>
     <div class="container">
       <nav aria-label="breadcrumb">
@@ -37,124 +37,150 @@
         </ol>
       </nav>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-secondary">
           <p>
-            <h4>¿Cómo funciona?</h4>
-            <p>Busca los hoteles de acuerdo a tu preferencia</p>
+            <h4>¿De qué trata?</h4>
+            <p>Fate/Stay Night es una serie de anime que trata sobre la Quinta Guerra del Santo Grial, un torneo a muerte entre magos. El ganador obtiene El Grial, la reliquia capaz de concederle cualquier deseo.</p>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-secondary">
           <p>
-            <h4>¿Dónde reservar?</h4>
-            <p>Elegí la ciudad que te interese y luego realizá la reserva con tus datos</p>
+            <h4>Servants</h4>
+            <p>Son espíritus heróicos de personajes históricos que fueron reconocidas leyendas en su tiempo. Se manifiestan en el presente al ser invocados por un Master, para pelear en la guerra. Cada uno es invocado bajo una de las 7 clases existentes.</p>
           </p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 text-secondary">
           <p>
-            <h4>¿Cómo pago?</h4>
-            <p>Selecciona tu tarjeta de crédito</p>
+            <h4>Masters</h4>
+            <p>Magos seleccionados para participar de la guerra del Santo Grial. Se valen de un espíritu heróico convocado mediante un ritual, asi como de sus propias habilidades, para pelear a muerte entre sí.</p>
           </p>
         </div>
       </div>
       <hr>
 
-      <img class="img-fluid" id="landing-img" src="/images/playa1.jpg" alt="playa">
+      <img class="img-fluid" id="landing-img" src="/images/banner_saber_edit.png" alt="playa">
 
       <div class="d-flex flex-wrap flex-row-reverse">
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/berlin.jpg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/saber.jpg" alt="imagen hotel">
             <div class="card-body"  >
-              <h5 class="card-title">Berlín</h5>
-              <h6 class="card-subtitle text-muted">Alemania</h6>
-              <p class="card-text">Hotel ubicado sore la zona céntrica de la ciudad</p>
+              <h5 class="card-title">Saber</h5>
+              <h6 class="card-subtitle text-muted">Arturia Pendragon</h6>
+              <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary btn-reserva">
-                <span class="oi oi-location"></span>Reservar</button>
+              <button class="btn btn-danger btn-reserva">
+                <span class="oi oi-location"></span>Ver detalles</button>
             </div>
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/san-pablo.jpg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/archer.jpg" alt="imagen hotel">
           <div class="card-body"  >
-            <h5 class="card-title">San Pablo</h5>
-            <h6 class="card-subtitle text-muted">Brasil</h6>
-            <p class="card-text">Ubicación  con amplia vista, a 200 metros de la playa</p>
+            <h5 class="card-title">Archer</h5>
+            <h6 class="card-subtitle text-muted">Emiya</h6>
+            <p class="card-text"> Su naturaleza no es similar a la de otros héroes. En una línea temporal paralela de la mostrada por Fate/SN, hizo un contrato con el mundo y se volvió el Espíritu Heróico </p>
           </div>
           <div class="card-footer">
-            <button class="btn btn-primary btn-reserva">
-              <span class="oi oi-location"></span>Reservar</button>
+            <button class="btn btn-danger btn-reserva">
+              <span class="oi oi-location"></span>Ver detalles</button>
           </div>     
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/tokio.jpg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/lancer.jpg" alt="imagen hotel">
             <div class="card-body">
-              <h5 class="card-title">Tokio</h5>
-              <h6 class="card-subtitle text-muted">Japón</h6>
-              <p class="card-text">Ubicado en pleno corazón de Akihabara</p>
+              <h5 class="card-title">Lancer</h5>
+              <h6 class="card-subtitle text-muted">Cú Chulainn</h6>
+              <p class="card-text">Un héroe de la mitología irlandesa. Él fue un semidiós, la descendencia de una mujer mortal, Deichtine; y la deidad Lug, el dios que gobernaba sobre el sol y un miembro de la familia divina Danann en la mitología celta.</p>
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary btn-reserva">
-                <span class="oi oi-location"></span>Reservar</button>
+              <button class="btn btn-danger btn-reserva">
+                <span class="oi oi-location"></span>Ver detalles</button>
             </div>
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/la-paz.jpeg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/rider2.jpg" alt="imagen hotel">
             <div class="card-body">
-              <h5 class="card-title">La Paz</h5>
-              <h6 class="card-subtitle text-muted">Bolivia</h6>
-              <p class="card-text">Vistoso establecimiento con vistas espectaculares</p>
+              <h5 class="card-title">Rider</h5>
+              <h6 class="card-subtitle text-muted">Medusa</h6>
+              <p class="card-text">De la mitología griega. En lugar de un espíritu heroico, es una existencia más cercana a un espíritu divino, pero sus acciones la hacen más conocida como un «anti-héroe más cercano a un monstruo». Junto con Stheno y Euryale, eran las Tres Hermanas Gorgonas que habitaban la Isla sin Forma. </p>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-danger btn-reserva">
+                <span class="oi oi-location"></span>Ver detalles</button>
+            </div>
+        </div>
+
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/gilgamesh.jpg" alt="imagen hotel">
+            <div class="card-body">
+              <h5 class="card-title">Archer</h5>
+              <h6 class="card-subtitle text-muted">Gilgamesh</h6>
+              <p class="card-text">El gran rey mitad-dios, mitad-humano nacido de la unión entre el rey de Uruk, Lugalbanda, y la diosa Rimat-Ninsun. Él gobernó la ciudad-estado sumeria de Uruk, la capital de la antigua Mesopotamia en la era Antes de Cristo</p>
             </div>            
             <div class="card-footer">
-              <button class="btn btn-primary btn-reserva">
-                <span class="oi oi-location"></span>Reservar</button>
+              <button class="btn btn-danger btn-reserva">
+                <span class="oi oi-location"></span>Ver detalles</button>
             </div>
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/cancun.jpg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/caster.png" alt="imagen hotel">
             <div class="card-body">
-              <h5 class="card-title">Cancún</h5>
-              <h6 class="card-subtitle text-muted">México</h6>
-              <p class="card-text">Ubicación con amplia vista al mar. Incluye sector de playa privada</p>
+              <h5 class="card-title">Caster</h5>
+              <h6 class="card-subtitle text-muted">Medea</h6>
+              <p class="card-text">Una desafortunada princesa que fue etiquetada como bruja en la mitología griega. Ella era la princesa de Cólquida, y la poseedora del Vellocino de Oro. </p>
             </div>
             <div class="card-footer">
-              <button class="btn btn-primary btn-reserva">
-                <span class="oi oi-location"></span>Reservar</button>
+              <button class="btn btn-danger btn-reserva">
+                <span class="oi oi-location"></span>Ver detalles</button>
             </div>
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/barcelona.jfif" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/berserker.jpg" alt="imagen hotel">
           <div class="card-body">
-            <h5 class="card-title">Barcelona</h5>
-            <h6 class="card-subtitle text-muted">España</h6>
-            <p class="card-text">Ubicación con amplia vista. Ubicado en pleno centro</p>
+            <h5 class="card-title">Berserker</h5>
+            <h6 class="card-subtitle text-muted">Heracles</h6>
+            <p class="card-text">También conocido como Hércules, el héroe más grande de la mitología griega. Él fue un semidiós nacido de Zeus, el rey de los dioses, y una mujer humana (quien a su vez era la nieta de Perseo, un semidiós hijo de Zeus).</p>
           </div>  
           <div class="card-footer">
-            <button class="btn btn-primary btn-reserva">
-              <span class="oi oi-location"></span>Reservar</button>
+            <button class="btn btn-danger btn-reserva">
+              <span class="oi oi-location"></span>Ver detalles</button>
           </div>
         </div>
 
-        <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/cordoba.jpg" alt="imagen hotel">
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/assassin.png" alt="imagen hotel">
           <div class="card-body">
-            <h5 class="card-title">Córdoba</h5>
-            <h6 class="card-subtitle text-muted">Argentina</h6>
-            <p class="card-text">Establecimiento con todas las comodidades, ubicado al pie del cerro.</p>
+            <h5 class="card-title">Assassin</h5>
+            <h6 class="card-subtitle text-muted">Sasaki Kojirou</h6>
+            <p class="card-text">Mítico espadachín japonés, cuyo nombre real se especula es Tsuda. Kojirou es conocido como un maestro espadachín cuya existencia es dudosa.</p>
           </div>  
           <div class="card-footer">
-            <button class="btn btn-primary btn-reserva">
-              <span class="oi oi-location"></span>Reservar</button>
+            <button class="btn btn-danger btn-reserva">
+              <span class="oi oi-location"></span>Ver detalles</button>
+          </div>
+        </div>
+
+        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
+          <img class="card-img-top" src="/images/servants/assassin_hassan2.jpg" alt="imagen hotel">
+          <div class="card-body">
+            <h5 class="card-title">Assassin</h5>
+            <h6 class="card-subtitle text-muted">Hassan-i-Sabbah</h6>
+            <p class="card-text">También conocido como el Anciano de la Montaña, es el seudónimo compartido por los diecinueve líderes de Hashshashin, una secta islámica medieval con sede en Persia.</p>
+          </div>  
+          <div class="card-footer">
+            <button class="btn btn-danger btn-reserva">
+              <span class="oi oi-location"></span>Ver detalles</button>
           </div>
         </div>
       </div>
     </div>
     
-    <footer>
+    <footer >
       <div class="row">
         <div class= "col-sm-4 d-flex flex-column">
           <a href="http://www.facebook.com">Facebook</a>
@@ -162,18 +188,18 @@
           <a href="http://www.instagram.com">Instagram</a>
         </div>
         <div class= "col-sm-4">
-          <address>
-            <h4>Oficina central</h4>
-            <p><span class="oi oi-home footer-icon"></span>Av. Mitre 2900, Sarandí, Argentina</p>
+          <address class="text-secondary">
+            <h4>Cuartel general</h4>
+            <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
             <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
-            <p><span class="oi oi-envelope-closed"></span></span>contact@guiahoteles.com</p>
+            <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
           </address>
         </div>
         <div class= "col-sm-4 d-flex flex-column align-items-end">
-          <a href="http://www.facebook.com">Contacto</a>
-          <a href="http://www.twitter.com">Nosotros</a>
-          <a href="http://www.twitter.com">Precios</a>
-          <a href="http://www.instagram.com">Términos y condiciones</a>
+          <a href="./params.html">Parámetros</a>
+          <a href="./contact.html">Contacto</a>
+          <a href="./about.html">Nosotros</a>
+          <a href="#">Términos y condiciones</a>
         </div>
       </div>
       
