@@ -59,143 +59,264 @@
       <hr>
 
       <img class="img-fluid" id="landing-img" src="/images/banner_saber_edit.png" alt="playa">
+      
+      <ul class="nav nav-pills nav-fill" id="charTab" role="tablist">
+        <li class="nav-item ">
+          <a class="nav-link active" id="servants-tab" data-toggle="tab" href="#servants" role="tab" aria-controls="servants" aria-selected="true">Servants</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " id="masters-tab" data-toggle="tab" href="#masters" role="tab" aria-controls="masters" aria-selected="false">Masters</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="charTabContent">
+        <div class="tab-pane fade show active" id="servants" role="tabpanel" aria-labelledby="servants-tab">
 
-      <div class="d-flex flex-wrap flex-row-reverse">
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/saber.jpg" alt="imagen hotel">
-            <div class="card-body"  >
-              <h5 class="card-title">Saber</h5>
-              <h6 class="card-subtitle text-muted">Arturia Pendragon</h6>
-              <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-danger btn-reserva">
-                <span class="oi oi-location"></span>Ver detalles</button>
-            </div>
-        </div>
+          <div class="d-flex flex-wrap flex-row-reverse">    
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/archer.jpg" alt="imagen hotel">
-          <div class="card-body"  >
-            <h5 class="card-title">Archer</h5>
-            <h6 class="card-subtitle text-muted">Emiya</h6>
-            <p class="card-text"> Su naturaleza no es similar a la de otros héroes. En una línea temporal paralela de la mostrada por Fate/SN, hizo un contrato con el mundo y se volvió el Espíritu Heróico </p>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/saber.jpg" alt="imagen hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Saber</h5>
+                  <h6 class="card-subtitle text-muted">Arturia Pendragon</h6>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/archer.jpg" alt="imagen hotel">
+              <div class="card-body"  >
+                <h5 class="card-title">Archer</h5>
+                <h6 class="card-subtitle text-muted">Emiya</h6>
+                <p class="card-text"> Su naturaleza no es similar a la de otros héroes. En una línea temporal paralela de la mostrada por Fate/SN, hizo un contrato con el mundo y se volvió el Espíritu Heróico </p>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-danger btn-reserva">
+                  <span class="oi oi-location"></span>Ver detalles</button>
+              </div>     
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/lancer.jpg" alt="imagen hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Lancer</h5>
+                  <h6 class="card-subtitle text-muted">Cú Chulainn</h6>
+                  <p class="card-text">Un héroe de la mitología irlandesa. Él fue un semidiós, la descendencia de una mujer mortal, Deichtine; y la deidad Lug, el dios que gobernaba sobre el sol y un miembro de la familia divina Danann en la mitología celta.</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/rider2.jpg" alt="imagen hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Rider</h5>
+                  <h6 class="card-subtitle text-muted">Medusa</h6>
+                  <p class="card-text">De la mitología griega. En lugar de un espíritu heroico, es una existencia más cercana a un espíritu divino, pero sus acciones la hacen más conocida como un «anti-héroe más cercano a un monstruo». Junto con Stheno y Euryale, eran las Tres Hermanas Gorgonas que habitaban la Isla sin Forma. </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/gilgamesh.jpg" alt="imagen hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Archer</h5>
+                  <h6 class="card-subtitle text-muted">Gilgamesh</h6>
+                  <p class="card-text">El gran rey mitad-dios, mitad-humano nacido de la unión entre el rey de Uruk, Lugalbanda, y la diosa Rimat-Ninsun. Él gobernó la ciudad-estado sumeria de Uruk, la capital de la antigua Mesopotamia en la era Antes de Cristo</p>
+                </div>            
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/caster.png" alt="imagen hotel">
+                <div class="card-body">
+                  <h5 class="card-title">Caster</h5>
+                  <h6 class="card-subtitle text-muted">Medea</h6>
+                  <p class="card-text">Una desafortunada princesa que fue etiquetada como bruja en la mitología griega. Ella era la princesa de Cólquida, y la poseedora del Vellocino de Oro. </p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/berserker.jpg" alt="imagen hotel">
+              <div class="card-body">
+                <h5 class="card-title">Berserker</h5>
+                <h6 class="card-subtitle text-muted">Heracles</h6>
+                <p class="card-text">También conocido como Hércules, el héroe más grande de la mitología griega. Él fue un semidiós nacido de Zeus, el rey de los dioses, y una mujer humana (quien a su vez era la nieta de Perseo, un semidiós hijo de Zeus).</p>
+              </div>  
+              <div class="card-footer">
+                <button class="btn btn-danger btn-reserva">
+                  <span class="oi oi-location"></span>Ver detalles</button>
+              </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/assassin.png" alt="imagen hotel">
+              <div class="card-body">
+                <h5 class="card-title">Assassin</h5>
+                <h6 class="card-subtitle text-muted">Sasaki Kojirou</h6>
+                <p class="card-text">Mítico espadachín japonés, cuyo nombre real se especula es Tsuda. Kojirou es conocido como un maestro espadachín cuya existencia es dudosa.</p>
+              </div>  
+              <div class="card-footer">
+                <button class="btn btn-danger btn-reserva">
+                  <span class="oi oi-location"></span>Ver detalles</button>
+              </div>
+            </div>
+    
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/servants/assassin_hassan2.jpg" alt="imagen hotel">
+              <div class="card-body">
+                <h5 class="card-title">Assassin</h5>
+                <h6 class="card-subtitle text-muted">Hassan-i-Sabbah</h6>
+                <p class="card-text">También conocido como el Anciano de la Montaña, es el seudónimo compartido por los diecinueve líderes de Hashshashin, una secta islámica medieval con sede en Persia.</p>
+              </div>  
+              <div class="card-footer">
+                <button class="btn btn-danger btn-reserva">
+                  <span class="oi oi-location"></span>Ver detalles</button>
+              </div>
+            </div>
           </div>
-          <div class="card-footer">
-            <button class="btn btn-danger btn-reserva">
-              <span class="oi oi-location"></span>Ver detalles</button>
-          </div>     
         </div>
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/lancer.jpg" alt="imagen hotel">
-            <div class="card-body">
-              <h5 class="card-title">Lancer</h5>
-              <h6 class="card-subtitle text-muted">Cú Chulainn</h6>
-              <p class="card-text">Un héroe de la mitología irlandesa. Él fue un semidiós, la descendencia de una mujer mortal, Deichtine; y la deidad Lug, el dios que gobernaba sobre el sol y un miembro de la familia divina Danann en la mitología celta.</p>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-danger btn-reserva">
-                <span class="oi oi-location"></span>Ver detalles</button>
-            </div>
-        </div>
+        <div class="tab-pane fade" id="masters" role="tabpanel" aria-labelledby="masters-tab">
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/rider2.jpg" alt="imagen hotel">
-            <div class="card-body">
-              <h5 class="card-title">Rider</h5>
-              <h6 class="card-subtitle text-muted">Medusa</h6>
-              <p class="card-text">De la mitología griega. En lugar de un espíritu heroico, es una existencia más cercana a un espíritu divino, pero sus acciones la hacen más conocida como un «anti-héroe más cercano a un monstruo». Junto con Stheno y Euryale, eran las Tres Hermanas Gorgonas que habitaban la Isla sin Forma. </p>
-            </div>
-            <div class="card-footer">
-              <button class="btn btn-danger btn-reserva">
-                <span class="oi oi-location"></span>Ver detalles</button>
-            </div>
-        </div>
+          <div class="d-flex flex-wrap flex-row-reverse">        
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/gilgamesh.jpg" alt="imagen hotel">
-            <div class="card-body">
-              <h5 class="card-title">Archer</h5>
-              <h6 class="card-subtitle text-muted">Gilgamesh</h6>
-              <p class="card-text">El gran rey mitad-dios, mitad-humano nacido de la unión entre el rey de Uruk, Lugalbanda, y la diosa Rimat-Ninsun. Él gobernó la ciudad-estado sumeria de Uruk, la capital de la antigua Mesopotamia en la era Antes de Cristo</p>
-            </div>            
-            <div class="card-footer">
-              <button class="btn btn-danger btn-reserva">
-                <span class="oi oi-location"></span>Ver detalles</button>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/shirou.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Emiya Shirou</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/caster.png" alt="imagen hotel">
-            <div class="card-body">
-              <h5 class="card-title">Caster</h5>
-              <h6 class="card-subtitle text-muted">Medea</h6>
-              <p class="card-text">Una desafortunada princesa que fue etiquetada como bruja en la mitología griega. Ella era la princesa de Cólquida, y la poseedora del Vellocino de Oro. </p>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/rin.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Tohsaka Rin</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
             </div>
-            <div class="card-footer">
-              <button class="btn btn-danger btn-reserva">
-                <span class="oi oi-location"></span>Ver detalles</button>
+
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/sakura.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Matou Sakura</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
             </div>
-        </div>
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/berserker.jpg" alt="imagen hotel">
-          <div class="card-body">
-            <h5 class="card-title">Berserker</h5>
-            <h6 class="card-subtitle text-muted">Heracles</h6>
-            <p class="card-text">También conocido como Hércules, el héroe más grande de la mitología griega. Él fue un semidiós nacido de Zeus, el rey de los dioses, y una mujer humana (quien a su vez era la nieta de Perseo, un semidiós hijo de Zeus).</p>
-          </div>  
-          <div class="card-footer">
-            <button class="btn btn-danger btn-reserva">
-              <span class="oi oi-location"></span>Ver detalles</button>
-          </div>
-        </div>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/shinji.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Matou Shinji</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/assassin.png" alt="imagen hotel">
-          <div class="card-body">
-            <h5 class="card-title">Assassin</h5>
-            <h6 class="card-subtitle text-muted">Sasaki Kojirou</h6>
-            <p class="card-text">Mítico espadachín japonés, cuyo nombre real se especula es Tsuda. Kojirou es conocido como un maestro espadachín cuya existencia es dudosa.</p>
-          </div>  
-          <div class="card-footer">
-            <button class="btn btn-danger btn-reserva">
-              <span class="oi oi-location"></span>Ver detalles</button>
-          </div>
-        </div>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/kotomine.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Kotomine Kirei</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
 
-        <div class="card card-servant d-flex flex-column justify-content-between ml-2">
-          <img class="card-img-top" src="/images/servants/assassin_hassan2.jpg" alt="imagen hotel">
-          <div class="card-body">
-            <h5 class="card-title">Assassin</h5>
-            <h6 class="card-subtitle text-muted">Hassan-i-Sabbah</h6>
-            <p class="card-text">También conocido como el Anciano de la Montaña, es el seudónimo compartido por los diecinueve líderes de Hashshashin, una secta islámica medieval con sede en Persia.</p>
-          </div>  
-          <div class="card-footer">
-            <button class="btn btn-danger btn-reserva">
-              <span class="oi oi-location"></span>Ver detalles</button>
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/illya.png" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Illyasviel Von Einzbern</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/kuzuki.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Kuzuki Souichirou</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
+
+            <div class="card card-character d-flex flex-column justify-content-between ml-2">
+              <img class="card-img-top" src="/images/masters/zouken.jpg" alt="imagen master">
+                <div class="card-body">
+                  <h5 class="card-title">Matou Zouken</h5>
+                  <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-danger btn-reserva">
+                    <span class="oi oi-location"></span>Ver detalles</button>
+                </div>
+            </div>
           </div>
         </div>
       </div>
+
+     
     </div>
     
     <footer >
       <div class="row">
-        <div class= "col-sm-4 d-flex flex-column">
+        <div class= "col-sm-2 d-flex flex-column">
           <a href="http://www.facebook.com">Facebook</a>
           <a href="http://www.twitter.com">Twitter</a>
           <a href="http://www.instagram.com">Instagram</a>
         </div>
-        <div class= "col-sm-4">
-          <address class="text-secondary">
+        <div class= "col-sm-2"></div>
+        <div class= "col-sm-4 ">
+          <address class="text-secondary ">
             <h4>Cuartel general</h4>
             <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
             <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
             <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
           </address>
         </div>
-        <div class= "col-sm-4 d-flex flex-column align-items-end">
+        <div class= "col-sm-2"></div>
+        <div class= "col-sm-2 d-flex flex-column align-items-end">
           <a href="./params.html">Parámetros</a>
           <a href="./contact.html">Contacto</a>
           <a href="./about.html">Nosotros</a>

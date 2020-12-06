@@ -15,7 +15,14 @@ footer{
     margin-top: 10px;
     padding: 20px;
 }
-.card-servant{
+.nav-pills .nav-item .nav-link {
+    color: whitesmoke;
+  }
+.nav-pills .nav-item .nav-link.active {
+    background-color: rgb(110, 10, 10);
+  }
+  
+.card-character{
     flex: 1 180px;
     /* padding: 2px 5px; */
     margin-top: 10px;
