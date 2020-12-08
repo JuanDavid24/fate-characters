@@ -1,6 +1,4 @@
-.nav{
-    color
-}
+
 body{
     background-color: rgb(20, 13, 5);
 }
@@ -9,11 +7,17 @@ body{
     color: white;
     margin-top: 50px
 }
+hr{
+    border-color: rgb(100, 100, 100);
+}
 footer{
     background-color: rgb(110, 10, 10);
     margin-bottom: 0px;
     margin-top: 10px;
     padding: 20px;
+}
+footer address{
+    text-align: center;
 }
 .nav-pills .nav-item .nav-link {
     color: whitesmoke;
@@ -21,9 +25,8 @@ footer{
 .nav-pills .nav-item .nav-link.active {
     background-color: rgb(110, 10, 10);
   }
-  
 .card-character{
-    flex: 1 180px;
+    flex: 1 200px;
     /* padding: 2px 5px; */
     margin-top: 10px;
 }
@@ -44,8 +47,11 @@ footer{
 }
 .card-img-top{
     width: 100%;
-    
 }
 .card-footer{
     padding:0px
+}
+.card-ref{
+    height: 100%;
+    width: 22rem;
 }

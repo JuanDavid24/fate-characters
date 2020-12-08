@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
 
-    <title>Guía hoteles</title>
+    <title>Fate/Stay Night characters</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-danger fixed-top">
@@ -224,26 +224,69 @@
           </tbody>
         </table>
       </div>
-      <div class="d-flex justify-content-center">
-          <div class="card"  style="width: 18rem; margin-top: 10px;">
-            <div class="card-header badge-dark">Aclaraciones</div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Rangos (<span class="oi oi-sort-descending"></span>): EX, A, B, C, D, E.</li>
-              <li class="list-group-item"><span class="oi oi-plus"></span> : Aumento temporal de poder</li>
-              <li class="list-group-item"><span class="oi oi-question-mark"></span> : No aplicable</li>
-            </ul>
+
+      <h5 class="text-secondary" style="margin: 10px 0px;">Aclaraciones</h5>
+      <hr>
+      
+        <div class="row justify-content-around">
+          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#atributos-ref" aria-expanded="false" aria-controls="multiCollapse1">Atributos</button>
+          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#alineacion-ref" aria-expanded="false" aria-controls="multiCollapse2">Alineación</button>
+          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#rangos-ref" aria-expanded="false" aria-controls="multiCollapse3">Rangos</button>
+        </div>
+
+        <div class="card-group justify-content-center">
+                      
+          <div class="collapse multi-collapse mx-auto my-1" id="atributos-ref">
+            <div class="card card-ref mx-auto ">
+              <div class="card-header badge-dark">Atributos básicos</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Strength: Bodily might in terms of power.</li>
+                <li class="list-group-item">Endurance: How much damage one can withstand.</li>
+                <li class="list-group-item">Agility: Quickness and speed of reaction.</li>
+                <li class="list-group-item">Magical Power: How much magical energy can be handled.</li>
+                <li class="list-group-item">Good luck: The quality of one's luck.</li>
+                <li class="list-group-item">Noble Phantasm: The strength of the Noble Phantasm one owns.</li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="collapse multi-collapse mx-auto my-1" id="alineacion-ref">
+            <div class="card card-ref mx-auto ">
+              <div class="card-header badge-dark">Alineación</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">A status showing a clear representation of the mentality of the Servant. It represents a combination of the policy they place importance on and their personality</li>
+                <li class="list-group-item"><strong>Personalities:</strong> good, neutral, evil.</li>
+                <li class="list-group-item"><strong>Policies:</strong> lawful, neutral, chaotic.</li>
+                <li class="list-group-item">Non-matching personalities won't result in major discord between servants</li>
+                <li class="list-group-item">Differing policies will result in difficulty in a Servant resolving differences of opinion with another Servant.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="collapse multi-collapse mx-auto my-1" id="rangos-ref">
+            <div class="card card-ref mx-auto ">
+              <div class="card-header badge-dark">Rangos</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Rangos (<span class="oi oi-sort-descending"></span>): EX, A, B, C, D, E.</li>
+                <li class="list-group-item"><span class="oi oi-plus"></span> : Aumento temporal de poder</li>
+                <li class="list-group-item"><span class="oi oi-question-mark"></span> : No aplicable</li>
+              </ul>
+            </div>
           </div>
       </div>
     </div>
+
+    </div>
     
     <footer >
-      <div class="row">
-        <div class= "col-sm-4 d-flex flex-column">
+      <div class="d-flex justify-content-between">
+        <div class= " d-flex flex-column">
           <a href="http://www.facebook.com">Facebook</a>
           <a href="http://www.twitter.com">Twitter</a>
           <a href="http://www.instagram.com">Instagram</a>
         </div>
-        <div class= "col-sm-4">
+      
+        <div class= "d-flex">
           <address class="text-secondary">
             <h4>Cuartel general</h4>
             <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
@@ -251,8 +294,9 @@
             <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
           </address>
         </div>
-        <div class= "col-sm-4 d-flex flex-column align-items-end">
-          <a href="#">Parámetros</a>
+        
+        <div class= "d-flex flex-column align-items-end">
+          <a href="./params.html">Parámetros</a>
           <a href="./contact.html">Contacto</a>
           <a href="./about.html">Nosotros</a>
           <a href="#">Términos y condiciones</a>
