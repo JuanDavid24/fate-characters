@@ -22,9 +22,19 @@ footer address{
 .nav-pills .nav-item .nav-link {
     color: whitesmoke;
   }
+.nav-pills .nav-item .nav-link:hover {
+   background-color: rgb(26, 26, 26);
+}  
+.nav-pills .nav-item .nav-link:focus {
+    background-color: rgb(0, 0, 0);
+ }  
 .nav-pills .nav-item .nav-link.active {
     background-color: rgb(110, 10, 10);
   }
+.nav-pills .nav-item .nav-link.active:hover {
+  background-color: rgb(110, 10, 10);
+}
+
 .card-character{
     flex: 1 200px;
     /* padding: 2px 5px; */
