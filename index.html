@@ -36,23 +36,32 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
+
+      <div class="row justify-content-around">
+        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#argumento-collapse" aria-expanded="false" aria-controls="multiCollapse1">Argumento</button>
+        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#masters-collapse" aria-expanded="false" aria-controls="multiCollapse2">Masters</button>
+        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#servants-collapse" aria-expanded="false" aria-controls="multiCollapse3">Servants</button>
+      </div>
+
       <div class="row">
-        <div class="col-sm-4 text-secondary">
+        <div class="col-md-4 text-secondary collapse multi-collapse" id="argumento-collapse">
           <p>
             <h4>¿De qué trata?</h4>
-            <p>Fate/Stay Night es una serie de anime que trata sobre la Quinta Guerra del Santo Grial, un torneo a muerte entre magos. El ganador obtiene El Grial, la reliquia capaz de concederle cualquier deseo.</p>
+            <p class="text-justify">Fate/Stay Night es una serie de anime que trata sobre la Quinta Guerra del Santo Grial, un torneo a muerte entre magos. El ganador obtiene El Grial, la reliquia capaz de concederle cualquier deseo. 
+              La historia se centra en Emiya Shirou, un joven sin conocimiento mágico y con sentido de la justicia inquebrantable, que termina envuelto en esta despiadada batalla.
+            </p>
           </p>
         </div>
-        <div class="col-sm-4 text-secondary">
-          <p>
-            <h4>Servants</h4>
-            <p>Son espíritus heróicos de personajes históricos que fueron reconocidas leyendas en su tiempo. Se manifiestan en el presente al ser invocados por un Master, para pelear en la guerra. Cada uno es invocado bajo una de las 7 clases existentes.</p>
-          </p>
-        </div>
-        <div class="col-sm-4 text-secondary">
+        <div class="col-md-4 text-secondary collapse multi-collapse" id="masters-collapse">
           <p>
             <h4>Masters</h4>
-            <p>Magos seleccionados para participar de la guerra del Santo Grial. Se valen de un espíritu heróico convocado mediante un ritual, asi como de sus propias habilidades, para pelear a muerte entre sí.</p>
+            <p class="text-justify">Magos seleccionados para participar de la guerra del Santo Grial. Se valen de un espíritu heróico convocado mediante un ritual (Servant), asi como de sus propias habilidades, para pelear a muerte entre sí.</p>
+          </p>
+        </div>
+        <div class="col-md-4 text-secondary collapse multi-collapse" id="servants-collapse">
+          <p>
+            <h4>Servants</h4>
+            <p class="text-justify">Son espíritus heróicos de personajes históricos que fueron reconocidas leyendas en su tiempo. Se manifiestan en el presente al ser invocados por un Master, para pelear en la guerra. Cada uno es invocado bajo una de las 7 clases existentes.</p>
           </p>
         </div>
       </div>

@@ -63,5 +63,16 @@ footer address{
 }
 .card-ref{
     height: 100%;
-    width: 22rem;
+    /* width: 22rem; */
 }
+tr:nth-child(odd) {
+    background-color: lightskyblue;
+    }
+
+   tr:nth-child(even) {
+    background-color: rgb(109, 34, 45);
+    }
+
+    th {
+       background-color: lightseagreen;
+    }

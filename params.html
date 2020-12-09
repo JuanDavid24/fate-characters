@@ -7,8 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
 
     <title>Fate/Stay Night characters</title>
@@ -227,53 +227,87 @@
 
       <h5 class="text-secondary" style="margin: 10px 0px;">Aclaraciones</h5>
       <hr>
-      
-        <div class="row justify-content-around">
-          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#atributos-ref" aria-expanded="false" aria-controls="multiCollapse1">Atributos</button>
-          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#alineacion-ref" aria-expanded="false" aria-controls="multiCollapse2">Alineación</button>
-          <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#rangos-ref" aria-expanded="false" aria-controls="multiCollapse3">Rangos</button>
-        </div>
-
-        <div class="card-group justify-content-center">
+        <div id="accordion">
+          <!-- <div class="row justify-content-center"> -->
                       
-          <div class="collapse multi-collapse mx-auto my-1" id="atributos-ref">
-            <div class="card card-ref mx-auto ">
-              <div class="card-header badge-dark">Atributos básicos</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Strength: Bodily might in terms of power.</li>
-                <li class="list-group-item">Endurance: How much damage one can withstand.</li>
-                <li class="list-group-item">Agility: Quickness and speed of reaction.</li>
-                <li class="list-group-item">Magical Power: How much magical energy can be handled.</li>
-                <li class="list-group-item">Good luck: The quality of one's luck.</li>
-                <li class="list-group-item">Noble Phantasm: The strength of the Noble Phantasm one owns.</li>
-              </ul>
-            </div>
-          </div>
-  
-          <div class="collapse multi-collapse mx-auto my-1" id="alineacion-ref">
-            <div class="card card-ref mx-auto ">
-              <div class="card-header badge-dark">Alineación</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">A status showing a clear representation of the mentality of the Servant. It represents a combination of the policy they place importance on and their personality</li>
-                <li class="list-group-item"><strong>Personalities:</strong> good, neutral, evil.</li>
-                <li class="list-group-item"><strong>Policies:</strong> lawful, neutral, chaotic.</li>
-                <li class="list-group-item">Non-matching personalities won't result in major discord between servants</li>
-                <li class="list-group-item">Differing policies will result in difficulty in a Servant resolving differences of opinion with another Servant.</li>
-              </ul>
-            </div>
-          </div>
+              <div class="card card-ref mx-auto my-1 ">
+                <div class="card-header badge-dark" id="headingOne">
+                  <button class="btn btn-link alert-link text-danger" data-toggle="collapse" data-target="#atributos-ref" aria-expanded="false" aria-controls="collapseOne">
+                    Atributos básicos
+                  </button>
+                </div>
+                <div id="atributos-ref" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Strength: Bodily might in terms of power.</li>
+                      <li class="list-group-item">Endurance: How much damage one can withstand.</li>
+                      <li class="list-group-item">Agility: Quickness and speed of reaction.</li>
+                      <li class="list-group-item">Magical Power: How much magical energy can be handled.</li>
+                      <li class="list-group-item">Good luck: The quality of one's luck.</li>
+                      <li class="list-group-item">Noble Phantasm: The strength of the Noble Phantasm one owns.</li>
+                    </ul>
+                  </div>   
+                </div>
+              </div>
 
-          <div class="collapse multi-collapse mx-auto my-1" id="rangos-ref">
-            <div class="card card-ref mx-auto ">
-              <div class="card-header badge-dark">Rangos</div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">Rangos (<span class="oi oi-sort-descending"></span>): EX, A, B, C, D, E.</li>
-                <li class="list-group-item"><span class="oi oi-plus"></span> : Aumento temporal de poder</li>
-                <li class="list-group-item"><span class="oi oi-question-mark"></span> : No aplicable</li>
-              </ul>
-            </div>
-          </div>
-      </div>
+              <div class="card card-ref mx-auto my-1 ">
+                <div class="card-header badge-dark" id="headingTwo">
+                  <button class="btn btn-link alert-link text-danger" data-toggle="collapse" data-target="#alineacion-ref" aria-expanded="false" aria-controls="collapseThree">
+                    Alineación
+                  </button>
+                </div>
+                <div id="alineacion-ref" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">A status showing a clear representation of the mentality of the Servant. It represents a combination of the policy they place importance on and their personality</li>
+                      <li class="list-group-item"><strong>Personalities:</strong> good, neutral, evil.</li>
+                      <li class="list-group-item"><strong>Policies:</strong> lawful, neutral, chaotic.</li>
+                      <li class="list-group-item">Non-matching personalities won't result in major discord between servants</li>
+                      <li class="list-group-item">Differing policies will result in difficulty in a Servant resolving differences of opinion with another Servant.</li>
+                    </ul>
+                  </div>   
+                </div>
+              </div>
+              
+              <div class="card card-ref mx-auto my-1">
+                <div class="card-header badge-dark" id="headingThree">
+                  <button class="btn btn-link alert-link text-danger" data-toggle="collapse" data-target="#rangos-ref" aria-expanded="false" aria-controls="collapseThree">
+                    Rangos
+                  </button>
+                </div>
+                <div id="rangos-ref" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Rangos (<span class="oi oi-sort-descending"></span>): EX, A, B, C, D, E.</li>
+                      <li class="list-group-item"><span class="oi oi-plus"></span> : Aumento temporal de poder</li>
+                      <li class="list-group-item"><span class="oi oi-question-mark"></span> : No aplicable</li>
+                    </ul>
+                  </div>   
+                </div>
+              </div>
+
+              <!-- <div class="card card-ref mx-auto my-1">
+                <div class="card-header badge-dark">Alineación</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">A status showing a clear representation of the mentality of the Servant. It represents a combination of the policy they place importance on and their personality</li>
+                  <li class="list-group-item"><strong>Personalities:</strong> good, neutral, evil.</li>
+                  <li class="list-group-item"><strong>Policies:</strong> lawful, neutral, chaotic.</li>
+                  <li class="list-group-item">Non-matching personalities won't result in major discord between servants</li>
+                  <li class="list-group-item">Differing policies will result in difficulty in a Servant resolving differences of opinion with another Servant.</li>
+                </ul>
+              </div>
+  
+              <div class="card card-ref mx-auto my-1">
+                <div class="card-header badge-dark">Rangos</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Rangos (<span class="oi oi-sort-descending"></span>): EX, A, B, C, D, E.</li>
+                  <li class="list-group-item"><span class="oi oi-plus"></span> : Aumento temporal de poder</li>
+                  <li class="list-group-item"><span class="oi oi-question-mark"></span> : No aplicable</li>
+                </ul>
+              </div>
+        </div> -->
+        </div>
+        
     </div>
 
     </div>
