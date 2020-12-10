@@ -7,9 +7,7 @@ body{
     color: white;
     margin-top: 50px
 }
-hr{
-    border-color: rgb(100, 100, 100);
-}
+
 footer{
     background-color: rgb(110, 10, 10);
     margin-bottom: 0px;
@@ -21,16 +19,20 @@ footer address{
 }
 .nav-pills .nav-item .nav-link {
     color: whitesmoke;
-  }
+}
+
 .nav-pills .nav-item .nav-link:hover {
    background-color: rgb(26, 26, 26);
 }  
+
 .nav-pills .nav-item .nav-link:focus {
     background-color: rgb(0, 0, 0);
  }  
+
 .nav-pills .nav-item .nav-link.active {
     background-color: rgb(110, 10, 10);
-  }
+}
+
 .nav-pills .nav-item .nav-link.active:hover {
   background-color: rgb(110, 10, 10);
 }
@@ -40,13 +42,23 @@ footer address{
     /* padding: 2px 5px; */
     margin-top: 10px;
 }
-.btn-reserva{
+.btn-char-details{
     width: 100%;
     border-radius: 0%;
 }
-.btn-reserva span{
+
+.btn-char-details:hover{
+    background-color: rgb(255, 66, 66) !important;
+}
+
+.btn-char-details:active{
+    background-color: rgb(156, 6, 6) !important;
+}
+
+.btn-char-details span{
     padding-right: 2px;
 }
+
 .footer-icon{
     padding-right: 10px;
 }
@@ -65,14 +77,8 @@ footer address{
     height: 100%;
     /* width: 22rem; */
 }
-tr:nth-child(odd) {
-    background-color: lightskyblue;
-    }
 
-   tr:nth-child(even) {
-    background-color: rgb(109, 34, 45);
-    }
-
-    th {
-       background-color: lightseagreen;
+/* Color filas par de la tabla */
+tr:nth-child(even) {
+    background-color: rgb(255, 200, 209);
     }

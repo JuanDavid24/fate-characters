@@ -25,8 +25,10 @@
           <li class="nav-item"> <a class="nav-link" href="./params.html">Parámetros</a> </li>
           <li class="nav-item active"> <a class="nav-link" href="#">Contacto</a> </li>
           <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Términos y condiciones</a> </li>
         </ul>
+        <div class="d-flex justify-content-center justify-content-md-end">
+          <button class="btn btn-danger btn-outline-light px-5"  data-toggle="modal" data-target="#registro-modal">Registrarse </button> 
+        </div>
       </div>
     </nav>
     <div class="jumbotron">
@@ -87,36 +89,106 @@
       </form>
     </div>
     
-    <footer >
-      <div class="d-flex justify-content-between">
-        <div class= " d-flex flex-column">
-          <a href="http://www.facebook.com">Facebook</a>
-          <a href="http://www.twitter.com">Twitter</a>
-          <a href="http://www.instagram.com">Instagram</a>
-        </div>
-      
-        <div class= "d-flex">
-          <address class="text-secondary">
-            <h4>Cuartel general</h4>
-            <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
-            <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
-            <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
-          </address>
-        </div>
-        
-        <div class= "d-flex flex-column align-items-end">
-          <a href="./params.html">Parámetros</a>
-          <a href="./contact.html">Contacto</a>
-          <a href="./about.html">Nosotros</a>
-          <a href="#">Términos y condiciones</a>
+    <!-- Modal -->
+    <div class="modal fade" id="registro-modal" tabindex="-1" role="dialog" aria-labelledby="registro" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registro">¡Registrate en Fate-wiki!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-row">                
+                  <div class="form-group col-sm-6">
+                    <label for="user_name">Usuario</label>
+                    <input type="text" class="form-control" id="user-name" placeholder="Ingrese nombre de usuario">
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label for="pass">Contraseña</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Ingrese su contraseña">
+                  </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="apellido">Apellido</label>
+                  <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="pais">País</label>
+                  <select class= "form-control" name="pais">
+                      <option value="1" selected>Argentina</option>
+                      <option value="2">Brasil</option>
+                      <option value="3">Chile</option>
+                      <option value="4">Uruguay</option>
+                      <option value="5">Perú</option> 
+                  </select>
+                </div>
+
+                <div class="col-sm-6">    
+                  <label>Imagen de perfil</label>        
+                  <div class="custom-file">
+                    <label class="custom-file-label" for="profile-pic">Seleccione una imagen...</label>      
+                    <input class="custom-file-input" type="file" id="profile-pic" name="foto"><br>
+                    <div class="invalid-feedback">Archivo no válido!</div>
+                  </div>      
+                </div>
+
+                <div class="custom-control custom-checkbox mb-2">
+                  <input  type="checkbox" name="acepto" class="custom-control-input" id="accept-check">
+                  <label class="custom-control-label" for="accept-check">"He leído y acepto los terminos y condiciones"</label>
+                </div>
+            </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="submit" value="enviar" class="btn btn-danger">OK!</button>
+          </div>
         </div>
       </div>
-      
-    </footer>
+    </div>
+  </div>
+</body>
+
+<footer>
+  <div class="d-flex justify-content-between">
+    <div class= " d-flex flex-column">
+      <a href="http://www.facebook.com">Facebook</a>
+      <a href="http://www.twitter.com">Twitter</a>
+      <a href="http://www.instagram.com">Instagram</a>
+    </div>
+  
+    <div class= "d-flex">
+      <address class="text-secondary">
+        <h4>Cuartel general</h4>
+        <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
+        <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
+        <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
+      </address>
+    </div>
+    
+    <div class= "d-flex flex-column align-items-end">
+      <a href="./params.html">Parámetros</a>
+      <a href="./contact.html">Contacto</a>
+      <a href="./about.html">Nosotros</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+  </div>
+</footer>
+
     <!-- Optional Javascript -->
     <!-- Javascript first, then pooper, then bootstrap -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
 </html>

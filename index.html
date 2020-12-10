@@ -23,13 +23,18 @@
           <li class="nav-item active"> <a class="nav-link" href="#">Home</a> </li>
           <li class="nav-item"> <a class="nav-link" href="./params.html">Parámetros</a> </li>
           <li class="nav-item"> <a class="nav-link" href="./contact.html">Contacto</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#">Términos y condiciones</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="./about.html">Nosotros</a> </li>          
         </ul>
-      </nav>
+        <div class="d-flex justify-content-center justify-content-md-end">
+          <button class="btn btn-danger btn-outline-light px-5"  data-toggle="modal" data-target="#registro-modal">Registrarse </button> 
+        </div>
+      </div>
+    </nav>
+
     <div class="jumbotron">
       <h1>Fate/Stay Night characters</h1>
     </div>
+
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb badge-pill pl-4">
@@ -38,16 +43,16 @@
       </nav>
 
       <div class="row justify-content-around">
-        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#argumento-collapse" aria-expanded="false" aria-controls="multiCollapse1">Argumento</button>
-        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#masters-collapse" aria-expanded="false" aria-controls="multiCollapse2">Masters</button>
-        <button class="col-2 btn btn-secondary p-1" type="button" data-toggle="collapse" data-target="#servants-collapse" aria-expanded="false" aria-controls="multiCollapse3">Servants</button>
+        <button class="col-2 btn btn-dark p-1" type="button" data-toggle="collapse" data-target="#argumento-collapse" aria-expanded="false" aria-controls="multiCollapse1">Argumento</button>
+        <button class="col-2 btn btn-dark p-1" type="button" data-toggle="collapse" data-target="#masters-collapse" aria-expanded="false" aria-controls="multiCollapse2">Masters</button>
+        <button class="col-2 btn btn-dark p-1" type="button" data-toggle="collapse" data-target="#servants-collapse" aria-expanded="false" aria-controls="multiCollapse3">Servants</button>
       </div>
 
       <div class="row">
         <div class="col-md-4 text-secondary collapse multi-collapse" id="argumento-collapse">
           <p>
             <h4>¿De qué trata?</h4>
-            <p class="text-justify">Fate/Stay Night es una serie de anime que trata sobre la Quinta Guerra del Santo Grial, un torneo a muerte entre magos. El ganador obtiene El Grial, la reliquia capaz de concederle cualquier deseo. 
+            <p class="text-justify text-light">Fate/Stay Night es una serie de anime que trata sobre la Quinta Guerra del Santo Grial, un torneo a muerte entre magos. El ganador obtiene El Grial, la reliquia capaz de concederle cualquier deseo. 
               La historia se centra en Emiya Shirou, un joven sin conocimiento mágico y con sentido de la justicia inquebrantable, que termina envuelto en esta despiadada batalla.
             </p>
           </p>
@@ -55,13 +60,13 @@
         <div class="col-md-4 text-secondary collapse multi-collapse" id="masters-collapse">
           <p>
             <h4>Masters</h4>
-            <p class="text-justify">Magos seleccionados para participar de la guerra del Santo Grial. Se valen de un espíritu heróico convocado mediante un ritual (Servant), asi como de sus propias habilidades, para pelear a muerte entre sí.</p>
+            <p class="text-justify text-light">Magos seleccionados para participar de la guerra del Santo Grial. Se valen de un espíritu heróico convocado mediante un ritual (Servant), asi como de sus propias habilidades, para pelear a muerte entre sí.</p>
           </p>
         </div>
         <div class="col-md-4 text-secondary collapse multi-collapse" id="servants-collapse">
           <p>
             <h4>Servants</h4>
-            <p class="text-justify">Son espíritus heróicos de personajes históricos que fueron reconocidas leyendas en su tiempo. Se manifiestan en el presente al ser invocados por un Master, para pelear en la guerra. Cada uno es invocado bajo una de las 7 clases existentes.</p>
+            <p class="text-justify text-light">Son espíritus heróicos de personajes históricos que fueron reconocidas leyendas en su tiempo. Se manifiestan en el presente al ser invocados por un Master, para pelear en la guerra. Cada uno es invocado bajo una de las 7 clases existentes.</p>
           </p>
         </div>
       </div>
@@ -91,7 +96,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -104,7 +109,7 @@
                 <p class="card-text"> Su naturaleza no es similar a la de otros héroes. En una línea temporal paralela de la mostrada por Fate/SN, hizo un contrato con el mundo y se volvió el Espíritu Heróico </p>
               </div>
               <div class="card-footer">
-                <button class="btn btn-danger btn-reserva">
+                <button class="btn btn-danger btn-char-details">
                   <span class="oi oi-location"></span>Ver detalles</button>
               </div>     
             </div>
@@ -117,7 +122,7 @@
                   <p class="card-text">Un héroe de la mitología irlandesa. Él fue un semidiós, la descendencia de una mujer mortal, Deichtine; y la deidad Lug, el dios que gobernaba sobre el sol y un miembro de la familia divina Danann en la mitología celta.</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -130,7 +135,7 @@
                   <p class="card-text">De la mitología griega. En lugar de un espíritu heroico, es una existencia más cercana a un espíritu divino, pero sus acciones la hacen más conocida como un «anti-héroe más cercano a un monstruo». Junto con Stheno y Euryale, eran las Tres Hermanas Gorgonas que habitaban la Isla sin Forma. </p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -143,7 +148,7 @@
                   <p class="card-text">El gran rey mitad-dios, mitad-humano nacido de la unión entre el rey de Uruk, Lugalbanda, y la diosa Rimat-Ninsun. Él gobernó la ciudad-estado sumeria de Uruk, la capital de la antigua Mesopotamia en la era Antes de Cristo</p>
                 </div>            
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -156,7 +161,7 @@
                   <p class="card-text">Una desafortunada princesa que fue etiquetada como bruja en la mitología griega. Ella era la princesa de Cólquida, y la poseedora del Vellocino de Oro. </p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -169,7 +174,7 @@
                 <p class="card-text">También conocido como Hércules, el héroe más grande de la mitología griega. Él fue un semidiós nacido de Zeus, el rey de los dioses, y una mujer humana (quien a su vez era la nieta de Perseo, un semidiós hijo de Zeus).</p>
               </div>  
               <div class="card-footer">
-                <button class="btn btn-danger btn-reserva">
+                <button class="btn btn-danger btn-char-details">
                   <span class="oi oi-location"></span>Ver detalles</button>
               </div>
             </div>
@@ -182,7 +187,7 @@
                 <p class="card-text">Mítico espadachín japonés, cuyo nombre real se especula es Tsuda. Kojirou es conocido como un maestro espadachín cuya existencia es dudosa.</p>
               </div>  
               <div class="card-footer">
-                <button class="btn btn-danger btn-reserva">
+                <button class="btn btn-danger btn-char-details">
                   <span class="oi oi-location"></span>Ver detalles</button>
               </div>
             </div>
@@ -195,7 +200,7 @@
                 <p class="card-text">También conocido como el Anciano de la Montaña, es el seudónimo compartido por los diecinueve líderes de Hashshashin, una secta islámica medieval con sede en Persia.</p>
               </div>  
               <div class="card-footer">
-                <button class="btn btn-danger btn-reserva">
+                <button class="btn btn-danger btn-char-details">
                   <span class="oi oi-location"></span>Ver detalles</button>
               </div>
             </div>
@@ -203,9 +208,7 @@
         </div>
 
         <div class="tab-pane fade" id="masters" role="tabpanel" aria-labelledby="masters-tab">
-
           <div class="d-flex flex-wrap flex-row-reverse">        
-
             <div class="card card-character d-flex flex-column justify-content-between ml-2">
               <img class="card-img-top" src="/images/masters/shirou.jpg" alt="imagen master">
                 <div class="card-body">
@@ -213,7 +216,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -225,7 +228,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -237,7 +240,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -249,7 +252,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -261,7 +264,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -273,7 +276,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -285,7 +288,7 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
@@ -297,47 +300,153 @@
                   <p class="card-text">Recordada como un hombre en su historia, ella es el «Único y futuro rey» y la legendaria heroína de Bretaña conocida como el Rey de los Caballeros</p>
                 </div>
                 <div class="card-footer">
-                  <button class="btn btn-danger btn-reserva">
+                  <button class="btn btn-danger btn-char-details">
                     <span class="oi oi-location"></span>Ver detalles</button>
                 </div>
             </div>
           </div>
         </div>
-      </div>
-
-     
+      </div>   
     </div>
-    
-    <footer >
-      <div class="d-flex justify-content-between">
-        <div class= " d-flex flex-column">
-          <a href="http://www.facebook.com">Facebook</a>
-          <a href="http://www.twitter.com">Twitter</a>
-          <a href="http://www.instagram.com">Instagram</a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="registro-modal" tabindex="-1" role="dialog" aria-labelledby="registro" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registro">¡Registrate en Fate-wiki!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-      
-        <div class= "d-flex">
-          <address class="text-secondary">
-            <h4>Cuartel general</h4>
-            <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
-            <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
-            <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
-          </address>
-        </div>
-        
-        <div class= "d-flex flex-column align-items-end">
-          <a href="./params.html">Parámetros</a>
-          <a href="./contact.html">Contacto</a>
-          <a href="./about.html">Nosotros</a>
-          <a href="#">Términos y condiciones</a>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">                
+                <div class="form-group col-sm-6">
+                  <label for="user_name">Usuario</label>
+                  <input type="text" class="form-control" id="user-name" placeholder="Ingrese nombre de usuario">
+                </div>
+                <div class="form-group col-sm-6">
+                  <label for="pass">Contraseña</label>
+                  <input type="password" class="form-control" id="pass" placeholder="Ingrese su contraseña">
+                </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="apellido">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group col-sm-6">
+                <label for="pais">País</label>
+                <select class= "form-control" name="pais">
+                    <option value="1" selected>Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Chile</option>
+                    <option value="4">Uruguay</option>
+                    <option value="5">Perú</option> 
+                </select>
+              </div>
+
+              <div class="col-sm-6">    
+                <label>Imagen de perfil</label>        
+                <div class="custom-file">
+                  <label class="custom-file-label" for="profile-pic">Seleccione una imagen...</label>      
+                  <input class="custom-file-input" type="file" id="profile-pic" name="foto"><br>
+                  <div class="invalid-feedback">Archivo no válido!</div>
+                </div>      
+              </div>
+
+              <div class="custom-control custom-checkbox mb-2">
+                <input  type="checkbox" name="acepto" class="custom-control-input" id="accept-check">
+                <label class="custom-control-label" for="accept-check">"He leído y acepto los terminos y condiciones"</label>
+              </div>
+          </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="submit" value="enviar" class="btn btn-danger">OK!</button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- Lo que quedó sin usar del sign in original: -->
+  <!--              
+            </fieldset>
+            <fieldset>
+              <legend>Sobre Fate</legend>
+                Personajes favoritos (Ctrl+click para selección múltiple):<br>
+              <select name="personajes[]" size="9" multiple>
+                <optgroup label="Servants">
+                  <option value="1" selected>Saber</option>
+                  <option value="2" selected>Archer</option>
+                  <option value="3">Assassin</option>
+                  <option value="4">Rider</option>º
+                  <option value="5">Caster</option> 
+                  <option value="6">Berserker</option> 
+                  <option value="7" selected>Lancer</option> 
+                  <option value="8" selected>Archer (Gilgamesh)</option> 
+                </optgroup>
+                <optgroup label="Masters">
+                  <option value="9" selected>Shirou Emiya </option>
+                  <option value="10" selected>Rin Tohsaka</option>
+                  <option value="11">Sakura Matou</option>
+                  <option value="12">Shinji Matou (¿posta?)</option>
+                  <option value="13" selected>Illya Von Einzbern</option>
+                  <option value="14">Souichirou Kuzuki</option> 
+                  <option value="15"selected>Kotomine Kirei </option> 
+                  <option value="16">Zouken Matou</option> 
+               </optgroup>
+             </select><br><br>
+            ¿Cómo conociste la franquicia Fate?<br>
+            <input type="radio" name="conoce_fate_por" value="1" checked>Fate Stay/Night (anime) <br>
+            <input type="radio" name="conoce_fate_por" value="2">Fate UBW (anime) <br>
+            <input type="radio" name="conoce_fate_por" value="3">Fate Heaven's Feel (películas) <br>
+            <input type="radio" name="conoce_fate_por" value="4">Fate Grand Order (juego) <br>
+            <input type="radio" name="conoce_fate_por" value="5">Fate Stay/Night VN <br>
+            <input type="radio" name="conoce_fate_por" value="6">Otro anime de Fate (Apocrypha, Grand Order, Prototype) <br><br>
+            </fieldset> -->
+  </body>
+
+  <footer>
+    <div class="d-flex justify-content-between">
+      <div class= " d-flex flex-column">
+        <a href="http://www.facebook.com">Facebook</a>
+        <a href="http://www.twitter.com">Twitter</a>
+        <a href="http://www.instagram.com">Instagram</a>
+      </div>
+    
+      <div class= "d-flex">
+        <address class="text-secondary">
+          <h4>Cuartel general</h4>
+          <p><span class="oi oi-home footer-icon"></span>Type Moon st. 7, Fuyuki, Japan</p>
+          <p><span class="oi oi-phone footer-icon"></span>+54114578490</p>
+          <p><span class="oi oi-envelope-closed"></span></span>contact@fate-wiki.com</p>
+        </address>
+      </div>
       
-    </footer>
+      <div class= "d-flex flex-column align-items-end">
+        <a href="./params.html">Parámetros</a>
+        <a href="./contact.html">Contacto</a>
+        <a href="./about.html">Nosotros</a>
+        <a href="#">Términos y condiciones</a>
+      </div>
+    </div>   
+  </footer>
+
     <!-- Optional Javascript -->
     <!-- Javascript first, then pooper, then bootstrap -->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  </body>
+  
 </html>
