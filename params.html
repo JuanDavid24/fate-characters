@@ -44,17 +44,17 @@
       <div class="table-responsive bg-light">
         <table class="table table-striped">
           <thead class="thead-dark">
-            <th>Overall</th>
+            <th data-toggle="tooltip" data-placement="right" title="Arbitrary servant rank based on his/her stats">Overall</th>
             <th>Servant</th>
             <th>Class</th>
             <th>Master</th>
-            <th>Alignment</th>
-            <th>Strenght</th>
-            <th>Endurance</th>
-            <th>Agility</th>
-            <th>Mana</th>
-            <th>Luck</th>
-            <th>Noble Phantasm</th>
+            <th data-toggle="tooltip" data-placement="right" title="Representation of the mentality of the Servant (see below)">Alignment</th>
+            <th data-toggle="tooltip" data-placement="right" title="Bodily might in terms of power.">Strenght</th>
+            <th data-toggle="tooltip" data-placement="right" title="How much damage one can withstand.">Endurance</th>
+            <th data-toggle="tooltip" data-placement="right" title="Quickness and speed of reaction.">Agility</th>
+            <th data-toggle="tooltip" data-placement="right" title="How much magical energy can be handled.">Mana</th>
+            <th data-toggle="tooltip" data-placement="right" title="The quality of one's luck.">Luck</th>
+            <th data-toggle="tooltip" data-placement="right" title="The strength of the Noble Phantasm one owns (see below)">Noble Phantasm</th>
           </thead>
           <tbody>
             <tr>
@@ -298,7 +298,7 @@
       <div class="modal-content bg-dark text-light">
         <div class="modal-header">
           <h5 class="modal-title" id="registro">¡Registrate en Fate-wiki!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -391,9 +391,15 @@
 
     
 
-    <!-- Optional Javascript -->
-    <!-- Javascript first, then pooper, then bootstrap -->
-    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- Optional Javascript -->
+  <!-- Javascript first, then pooper, then bootstrap -->
+  <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function(){
+      $("[data-toggle='tooltip']").tooltip();
+    });
+  </script>
 </html>
