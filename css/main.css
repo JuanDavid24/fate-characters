@@ -59,7 +59,7 @@ footer address{
     padding-right: 2px;
 }
 
-.footer-icon{
+.footer-icon{   
     padding-right: 10px;
 }
 
@@ -75,7 +75,10 @@ footer address{
 }
 .card-ref{
     height: 100%;
-    /* width: 22rem; */
+}
+.btn>.popover-title{
+    background: red !important;
+    color: royalblue !important;
 }
 
 /* Color filas par de la tabla */
