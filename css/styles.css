@@ -1,0 +1,75 @@
+body {
+  background-color: #140d05; }
+
+.jumbotron {
+  background-color: #6e0a0a;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 32px; }
+
+footer {
+  background-color: #6e0a0a;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 20px; }
+
+footer address {
+  text-align: center; }
+
+.nav-pills .nav-item .nav-link {
+  color: whitesmoke; }
+
+.nav-pills .nav-item .nav-link:hover {
+  background-color: #4c4c4c; }
+
+.nav-pills .nav-item .nav-link:focus {
+  background-color: black; }
+
+.nav-pills .nav-item .nav-link.active {
+  background-color: #6e0a0a; }
+
+.nav-pills .nav-item .nav-link.active:hover {
+  background-color: #820e0e; }
+
+.card-character {
+  flex: 1 200px;
+  /* padding: 2px 5px; */
+  margin-top: 10px;
+  margin-bottom: 0px; }
+
+.btn-char-details {
+  width: 100%;
+  border-radius: 0%; }
+
+.btn-char-details:hover {
+  background-color: #e65752 !important; }
+
+.btn-char-details:active {
+  background-color: #a7403c !important; }
+
+.btn-char-details span {
+  padding-right: 2px; }
+
+.footer-icon {
+  padding-right: 10px; }
+
+#landing-img {
+  width: 100%;
+  max-height: 250px; }
+
+.card-img-top {
+  width: 100%; }
+
+.card-footer {
+  padding: 0px; }
+
+.card-ref {
+  height: 100%; }
+
+.btn > .popover-title {
+  background: red !important;
+  color: royalblue !important; }
+
+/* Color filas par de la tabla */
+tr:nth-child(even) {
+  background-color: #ffc8d1; }

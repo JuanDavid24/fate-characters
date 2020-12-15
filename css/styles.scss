@@ -1,0 +1,98 @@
+$bordo: rgb(110, 10, 10);
+$bordo-light: rgb(154, 24, 24);
+$danger: rgb(217, 83, 79);
+$danger-light: rgb(230, 87, 82);
+$danger-dark: rgb(167, 64, 60);
+
+
+@mixin margenes ($top, $bottom){
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+
+body{
+    background-color: rgb(20, 13, 5);
+}
+.jumbotron{
+    background-color: $bordo;
+    color: white;
+    @include margenes(50px, 32px);
+}
+
+footer{
+    background-color: $bordo;
+    @include margenes(50px, 0px);
+    padding: 20px;
+}
+footer address{
+    text-align: center;
+}
+.nav-pills .nav-item .nav-link {
+    color: whitesmoke;
+}
+
+.nav-pills .nav-item .nav-link:hover {
+   background-color: rgb(76, 76, 76);
+}  
+
+.nav-pills .nav-item .nav-link:focus {
+    background-color: rgb(0, 0, 0);
+ }  
+
+.nav-pills .nav-item .nav-link.active {
+    background-color: $bordo;
+}
+
+.nav-pills .nav-item .nav-link.active:hover {
+  background-color: $bordo-light;
+}
+
+.card-character{
+    flex: 1 200px;
+    /* padding: 2px 5px; */
+    @include margenes(10px, 0px);
+
+}
+.btn-char-details{
+    width: 100%;
+    border-radius: 0%;
+}
+
+.btn-char-details:hover{
+    background-color: $danger-light !important;
+}
+
+.btn-char-details:active{
+    background-color: $danger-dark !important;
+}
+
+.btn-char-details span{
+    padding-right: 2px;
+}
+
+.footer-icon{   
+    padding-right: 10px;
+}
+
+#landing-img{
+    width: 100%;
+    max-height: 250px;
+}
+.card-img-top{
+    width: 100%;
+}
+.card-footer{
+    padding:0px
+}
+.card-ref{
+    height: 100%;
+}
+.btn>.popover-title{
+    background: red !important;
+    color: royalblue !important;
+}
+
+/* Color filas par de la tabla */
+tr:nth-child(even) {
+    background-color: rgb(255, 200, 209);
+    }
