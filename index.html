@@ -481,41 +481,7 @@
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-      $(function(){
-        $("[data-toggle='popover']").popover();
-      });
-
-        $('.carousel').carousel({
-        interval: 5000
-      })
-
-      $("#registro-modal").on("show.bs.modal", function (e) {
-        console.log ('el modal se muestra');
-        
-        $('#registro-btn').removeClass('btn-danger');
-        $('#registro-btn').removeClass('btn-outline-light');
-        $('#registro-btn').addClass('btn-light');
-        $('#registro-btn').prop('disabled', true);
-      });
-
-      $("#registro-modal").on("shown.bs.modal", function (e) {
-        console.log ('el modal se mostró')
-      });
-
-      $("#registro-modal").on("hide.bs.modal", function (e) {
-        console.log ('el modal se oculta')
-        $('#registro-btn').removeClass('btn-light');
-        $('#registro-btn').addClass('btn-danger');
-        $('#registro-btn').addClass('btn-outline-light');
-        $('#registro-btn').prop('disabled', false);
-      });
-
-      $("#registro-modal").on("hidden.bs.modal", function (e) {
-        console.log ('el modal se ocultó')
-      });
-      
-    </script>
+    <script src="js/carousel-custom.js"></script>        
+    <script src="js/registro-btn-custom.js"></script>       
     <!-- endbuild -->
 </html>
