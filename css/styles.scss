@@ -1,5 +1,6 @@
 $bordo: rgb(110, 10, 10);
 $bordo-light: rgb(154, 24, 24);
+$bordo-translucent : rgb(255, 200, 209);
 $danger: rgb(217, 83, 79);
 $danger-light: rgb(230, 87, 82);
 $danger-dark: rgb(167, 64, 60);
@@ -94,5 +95,5 @@ footer address{
 
 /* Color filas par de la tabla */
 tr:nth-child(even) {
-    background-color: rgb(255, 200, 209);
+    background-color: $bordo-translucent;
     }

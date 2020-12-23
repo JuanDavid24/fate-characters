@@ -1,17 +1,28 @@
+@bordo: rgb(110, 10, 10);
+@bordo-light: rgb(154, 24, 24);
+@bordo-translucent : rgb(255, 200, 209);
+@danger: rgb(217, 83, 79);
+@danger-light: rgb(230, 87, 82);
+@danger-dark: rgb(167, 64, 60);
+
+
+.margenes (@top: 50px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom;
+}
 
 body{
     background-color: rgb(20, 13, 5);
 }
 .jumbotron{
-    background-color: rgb(110, 10, 10);
+    background-color: @bordo;
     color: white;
-    margin-top: 50px
+    .margenes(50px, 32px);
 }
 
 footer{
-    background-color: rgb(110, 10, 10);
-    margin-bottom: 0px;
-    margin-top: 10px;
+    background-color: @bordo;
+    .margenes();
     padding: 20px;
 }
 footer address{
@@ -22,7 +33,7 @@ footer address{
 }
 
 .nav-pills .nav-item .nav-link:hover {
-   background-color: rgb(26, 26, 26);
+   background-color: rgb(76, 76, 76);
 }  
 
 .nav-pills .nav-item .nav-link:focus {
@@ -30,17 +41,18 @@ footer address{
  }  
 
 .nav-pills .nav-item .nav-link.active {
-    background-color: rgb(110, 10, 10);
+    background-color: @bordo;
 }
 
 .nav-pills .nav-item .nav-link.active:hover {
-  background-color: rgb(110, 10, 10);
+  background-color: @bordo-light;
 }
 
 .card-character{
     flex: 1 200px;
     /* padding: 2px 5px; */
-    margin-top: 10px;
+    margenes(10px, 0px);
+
 }
 .btn-char-details{
     width: 100%;
@@ -48,11 +60,11 @@ footer address{
 }
 
 .btn-char-details:hover{
-    background-color: rgb(255, 66, 66) !important;
+    background-color: @danger-light !important;
 }
 
 .btn-char-details:active{
-    background-color: rgb(156, 6, 6) !important;
+    background-color: @danger-dark !important;
 }
 
 .btn-char-details span{
@@ -76,8 +88,12 @@ footer address{
 .card-ref{
     height: 100%;
 }
+.btn>.popover-title{
+    background: red !important;
+    color: royalblue !important;
+}
 
 /* Color filas par de la tabla */
 tr:nth-child(even) {
-    background-color: rgb(255, 200, 209);
+    background-color: @bordo-translucent;
     }

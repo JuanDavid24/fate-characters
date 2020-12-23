@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
-    "scss": "node-sass -o css/ css/"
+    "start": "concurrently \"npm run watch:scss \" \"npm run dev \" ",
+    "build:scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run build:scss ",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images && imagemin images/masters/* --out-dir dist/images/masters && imagemin images/servants/* --out-dir dist/images/servants",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin params.html -d dist --htmlmin -o dist/params.html",
+    "build": "npm run clean && npm run build:scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -16,11 +22,19 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/JuanDavid24/fate-characters#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
     "lite-server": "^2.5.4",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
