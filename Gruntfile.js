@@ -35,9 +35,19 @@ module.exports = function(grunt) {
             dynamic: {
                 files: [{
                     expand: true,
-                    cwd: './',
-                    src: 'images/*.{png,gif,jpg,jpeg}',
-                    dest: 'dist/'
+                    cwd: './images/',
+                    src: './*.{png,gif,jpg,jpeg}',
+                    dest: 'dist/images/'
+                }, {
+                    expand: true,
+                    cwd: './images/',
+                    src: './servants/*.{png,gif,jpg,jpeg}',
+                    dest: 'dist/images/'
+                }, {
+                    expand: true,
+                    cwd: './images/',
+                    src: './masters/*.{png,gif,jpg,jpeg}',
+                    dest: 'dist/images/'
                 }]
             }
         },
@@ -46,8 +56,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-sass'); //cargar plug-in
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
 
     //definimos las tareas de grunt (las que se ejecutan con 'grunt [nombreDeTarea]')
     grunt.registerTask('css', ['sass']);
+    grunt.registerTask('images:compress', ['imagemin']);
     grunt.registerTask('default', ['browserSync', 'watch']); //tarea default (solo ejecutando 'grunt' a secas)
 }
