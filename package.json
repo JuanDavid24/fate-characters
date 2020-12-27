@@ -4,6 +4,7 @@
   "description": "primer proyecto de nodejs",
   "main": "index.html",
   "scripts": {
+    "preinstall": "npm install -g grunt-cli && npm install -g sass npm install -g ruby",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
     "start": "concurrently \"npm run watch:scss \" \"npm run dev \" ",
@@ -42,7 +43,6 @@
     "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1",
-    "ruby": "^0.6.1"
+    "popper.js": "^1.16.1"
   }
 }
