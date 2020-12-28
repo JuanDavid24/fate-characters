@@ -4,7 +4,7 @@ $(function(){
       
       $('#registro-btn').removeClass('btn-danger');
       $('#registro-btn').removeClass('btn-outline-light');
-      $('#registro-btn').addClass('btn-light');
+      $('#registro-btn').addClass('btn-dark');
       $('#registro-btn').prop('disabled', true);
     });
   
@@ -14,7 +14,7 @@ $(function(){
   
     $("#registro-modal").on("hide.bs.modal", function (e) {
       console.log ('el modal se oculta')
-      $('#registro-btn').removeClass('btn-light');
+      $('#registro-btn').removeClass('btn-dark');
       $('#registro-btn').addClass('btn-danger');
       $('#registro-btn').addClass('btn-outline-light');
       $('#registro-btn').prop('disabled', false);
