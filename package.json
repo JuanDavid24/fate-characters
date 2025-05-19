@@ -9,8 +9,8 @@
     "dev": "lite-server",
     "start": "concurrently \"npm run watch:scss \" \"npm run dev \" ",
     "copy:fonts": "copyfiles -u 3 \"./node_modules/open-iconic/font/fonts/*.*\" \"dist\" ",
-    "build:scss": "node-sass -o css/ css/",
-    "watch:scss": "onchange \"css/*.scss\" -- npm run build:scss ",
+    "build:scss": "sass scss/ css/",
+    "watch:scss": "onchange \"scss/*.scss\" -- npm run build:scss ",
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images && imagemin images/masters/* --out-dir dist/images/masters && imagemin images/servants/* --out-dir dist/images/servants",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin about.html -d dist --htmlmin -o dist/about.html && usemin contact.html -d dist --htmlmin -o dist/contact.html && usemin params.html -d dist --htmlmin -o dist/params.html",
@@ -42,9 +42,9 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "htmlmin": "0.0.7",
+    "imagemin-cli": "^8.0.0",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.5.4",
-    "node-sass": "^8.0.0",
     "onchange": "^7.1.0",
     "rimraf": "^3.0.2",
     "time-grunt": "^2.0.0",
@@ -56,6 +56,7 @@
     "concurrently": "8.0.1",
     "jquery": "^3.5.1",
     "open-iconic": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sass": "^1.89.0"
   }
 }

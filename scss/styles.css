@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(20, 13, 5);
+}
+
+.jumbotron {
+  background-color: rgb(110, 10, 10);
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+footer {
+  background-color: rgb(110, 10, 10);
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+footer address {
+  text-align: center;
+}
+
+.nav-pills .nav-item .nav-link {
+  color: whitesmoke;
+}
+
+.nav-pills .nav-item .nav-link:hover {
+  background-color: rgb(76, 76, 76);
+}
+
+.nav-pills .nav-item .nav-link:focus {
+  background-color: rgb(0, 0, 0);
+}
+
+.nav-pills .nav-item .nav-link.active {
+  background-color: rgb(110, 10, 10);
+}
+
+.nav-pills .nav-item .nav-link.active:hover {
+  background-color: rgb(154, 24, 24);
+}
+
+.card-character {
+  flex: 1 200px;
+  /* padding: 2px 5px; */
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.btn-char-details {
+  width: 100%;
+  border-radius: 0%;
+}
+
+.btn-char-details:hover {
+  background-color: rgb(230, 87, 82) !important;
+}
+
+.btn-char-details:active {
+  background-color: rgb(167, 64, 60) !important;
+}
+
+.btn-char-details span {
+  padding-right: 2px;
+}
+
+.footer-icon {
+  padding-right: 10px;
+}
+
+#landing-img {
+  width: 100%;
+  max-height: 250px;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.card-footer {
+  padding: 0px;
+}
+
+.card-ref {
+  height: 100%;
+}
+
+.btn > .popover-title {
+  background: red !important;
+  color: royalblue !important;
+}
+
+/* Color filas par de la tabla */
+tr:nth-child(even) {
+  background-color: rgb(255, 200, 209);
+}
+
+/*# sourceMappingURL=styles.css.map */
